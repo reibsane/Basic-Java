@@ -1,0 +1,134 @@
+import java.util.Scanner;
+// Importing the Scanner utility
+
+public class weightCalc {
+
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        // Creating a new Scanner called "input"
+
+        System.out.println("-------------------------------------");
+        System.out.println("Planet Weight Calculator");
+        System.out.println("-------------------------------------");
+        System.out.println("Enter Weight in Lbs:");
+        // These lines print text asking for the weight
+
+        int weight = input.nextInt();
+        // Saves the user input for weight as "weight"
+
+        System.out.println("-------------------------------------");
+        System.out.println("Planet Numbers");
+        System.out.println("-------------------------------------");
+        System.out.println("1 - Mercury");
+        System.out.println("2 - Venus");
+        System.out.println("3 - Mars");
+        System.out.println("4 - Jupiter");
+        System.out.println("5 - Saturn");
+        System.out.println("6 - Uranus");
+        System.out.println("7 - Neptune");
+        System.out.println("-------------------------------------");
+        System.out.println("Please Select a Planet:");
+        // These lines list the planet numbers and ask the user to pick one
+
+        int planetNum = input.nextInt();
+        // Saves the user input for planet as "planetNum"
+
+        // Now that we have weight and planet, we start our if statements
+        
+        // This checks if the planet number is 1
+        if (planetNum == 1) {
+            
+            // If the planet number is one, this block of code runs    
+            
+            double newWeight = (weight * 0.378);
+            // This line makes a new variable called "newWeight" and sets it
+            // equal to the result of the calculation for Mercury
+            
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Mercury is: %.2f", newWeight);
+            // This line prints the calculated weight to two decimal places
+            
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+            // If planetNum does not equal 1,the next line checks if it's 2
+            
+        } else  if (planetNum == 2) {
+            
+            // If planetNum is 2, this block of code runs
+            // If not, it continues down the line until it matches
+            
+            System.out.println("else");
+
+            double newWeight = (weight * 0.907);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Venus is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        }else  if (planetNum == 3) {
+
+            System.out.println("else");
+
+            double newWeight = (weight * 0.377);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Mars is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        }else  if (planetNum == 4) {
+
+            System.out.println("else");
+
+            double newWeight = (weight * 2.364);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Jupiter is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        }else  if (planetNum == 5) {
+
+            System.out.println("else");
+
+            double newWeight = (weight * 0.916);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Saturn is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        }else  if (planetNum == 6) {
+
+            System.out.println("else");
+
+            double newWeight = (weight * 0.889);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Uranus is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        }else  if (planetNum == 7) {
+
+            System.out.println("else");
+
+            double newWeight = (weight * 0.112);
+
+            System.out.println("-------------------------------------");
+            System.out.printf("Your weight on Neptune is: %.2f", newWeight);
+            System.out.println(" Lbs");
+            System.out.println("-------------------------------------");
+
+        } else {
+            
+            // If planetNum does not equal any of the options, this code runs
+            System.out.println("Invalid Entry");
+
+        }
+    }
+}
+
