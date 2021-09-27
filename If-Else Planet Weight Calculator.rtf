@@ -1,0 +1,250 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red153\green168\blue186;
+\red109\green109\blue109;\red254\green187\blue91;\red133\green96\blue154;\red88\green118\blue71;\red86\green132\blue173;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c33725\c51765\c67843;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 import \cf4 java.util.Scanner\cf2 ;\
+\cf5 // Importing the Scanner utility\
+\
+\cf2 public class \cf4 weightCalc \{\
+\
+    \cf2 public static void \cf6 main\cf4 (String[] args)\
+    \{\
+        Scanner input = \cf2 new \cf4 Scanner(System.
+\f1\i \cf7 in
+\f0\i0 \cf4 )\cf2 ;\
+        \cf5 // Creating a new Scanner called "input"\
+\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "Planet Weight Calculator"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "Enter Weight in Lbs:"\cf4 )\cf2 ;\
+        \cf5 // These lines print text asking for the weight\
+\
+        \cf2 int \cf4 weight = input.nextInt()\cf2 ;\
+        \cf5 // Saves the user input for weight as "weight"\
+\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "Planet Numbers"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "1 - Mercury"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "2 - Venus"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "3 - Mars"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "4 - Jupiter"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "5 - Saturn"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "6 - Uranus"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "7 - Neptune"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+        \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "Please Select a Planet:"\cf4 )\cf2 ;\
+        \cf5 // These lines list the planet numbers and ask the user to pick one\
+\
+        \cf2 int \cf4 planetNum = input.nextInt()\cf2 ;\
+        \cf5 // Saves the user input for planet as "planetNum"\
+\
+        // Now that we have weight and planet, we start our if statements\
+        \
+        // This checks if the planet number is 1\
+        \cf2 if \cf4 (planetNum == \cf9 1\cf4 ) \{\
+            \
+            \cf5 // If the planet number is one, this block of code runs    \
+            \
+            \cf2 double \cf4 newWeight = (weight * \cf9 0.378\cf4 )\cf2 ;\
+            \cf5 // This line makes a new variable called "newWeight" and sets it\
+            // equal to the result of the calculation for Mercury\
+            \
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Mercury is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf5 // This line prints the calculated weight to two decimal places\
+            \
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+            \cf5 // If planetNum does not equal 1,the next line checks if it's 2\
+            \
+        \cf4 \} \cf2 else  if \cf4 (planetNum == \cf9 2\cf4 ) \{\
+            \
+            \cf5 // If planetNum is 2, this block of code runs\
+            // If not, it continues down the line until it matches\
+            \
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 0.907\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Venus is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \}\cf2 else  if \cf4 (planetNum == \cf9 3\cf4 ) \{\
+\
+            System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 0.377\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Mars is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \}\cf2 else  if \cf4 (planetNum == \cf9 4\cf4 ) \{\
+\
+            System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 2.364\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Jupiter is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \}\cf2 else  if \cf4 (planetNum == \cf9 5\cf4 ) \{\
+\
+            System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 0.916\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Saturn is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \}\cf2 else  if \cf4 (planetNum == \cf9 6\cf4 ) \{\
+\
+            System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 0.889\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Uranus is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \}\cf2 else  if \cf4 (planetNum == \cf9 7\cf4 ) \{\
+\
+            System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "else"\cf4 )\cf2 ;\
+\
+            double \cf4 newWeight = (weight * \cf9 0.112\cf4 )\cf2 ;\
+\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .printf(\cf8 "Your weight on Neptune is: %.2f"\cf2 , \cf4 newWeight)\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 " Lbs"\cf4 )\cf2 ;\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "-------------------------------------"\cf4 )\cf2 ;\
+\
+        \cf4 \} \cf2 else \cf4 \{\
+            \
+            \cf5 // If planetNum does not equal any of the options, this code runs\
+            \cf4 System.
+\f1\i \cf7 out
+\f0\i0 \cf4 .println(\cf8 "Invalid Entry"\cf4 )\cf2 ;\
+\
+        \cf4 \}\
+    \}\
+\}\
+\
+}
